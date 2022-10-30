@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0120)http://localhost:63342/october-10-html/lesson%201%20dz/dz.html?_ijt=rc7av56n19ka0213bq8t2ipihu&_ij_reload=RELOAD_ON_SAVE -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,&gt;
+    &lt;meta http-equiv=" x-ua-compatible"="">
+    <title>FAMILY SIMPSON</title>
+
+</head>
+<body>
+<h1>SIMPSON'S FAMILY</h1>
+<ul><a href="https://simpsons.fandom.com/wiki/Category:Simpson_family" target="_blank" style="background: coral" color="blue"> All family</a></ul>
+<img src="./FAMILY SIMPSON_files/Family.png" alt="family simpsons">
+
+<p> The Simpsons are the main protagonists of the TV show The Simpsons.
+   The family first appeared on The Tracey Ullman Show, in the comedy short Good Night.
+   The family has hundreds of relatives, including Mr. Burns and Patty and Selma.</p>
+<h2><a href="https://simpsons.fandom.com/wiki/Homer_Simpson?file=Homer+Simpson.png" target="_blank" style="background: bisque"> Homer Simpson </a></h2>
+<img src="./FAMILY SIMPSON_files/Homer.png" alt="">
+<p> (born May 12, 1956)[40] is the main protagonist of The Simpsons series (or show).
+He is the spouse of Marge Simpson and father of Bart, Lisa and Maggie Simpson.
+Homer is overweight</p>
+<ul>
+    <li>“Mmm... (food)... *Drooling*”
+        ―Homer's catchphrase, usually when hungry.</li>
+    <li>“Shut up Flanders!”
+        ―Homer also to his neighbor.</li>
+    <li>“Lisa! Knock off that racket!”
+        ―Homer when Lisa plays her saxophone.</li>
+</ul>
+<h2><a href="https://simpsons.fandom.com/wiki/Bart_Simpson%20%20%20%20%20%20%20%20target=" _blank="" style="background: bisque"> Bart </a></h2>
+<img src="./FAMILY SIMPSON_files/Bart.png" alt="">
+<p>Bart's hobbies include skateboarding, watching television (especially The Krusty the Clown Show which includes The Itchy &amp; Scratchy Show), reading comic books (especially Radioactive Man), playing video games and generally causing mischief</p>
+<ul>
+    <li>“Ay Caramba!”
+        ―Bart's catchphrase and first words</li>
+    <li>“Eat my shorts!”
+        ―Bart's second catchphrase</li>
+    <li>“I didn't do it!”
+        ―Bart's earlier catchphrase</li>
+</ul>
+<h2><a href="https://simpsons.fandom.com/wiki/Lisa_Simpson%20%20%20%20%20%20%20%20target" _blank="" style="background: bisque"> Lisa</a></h2>
+<img src="./FAMILY SIMPSON_files/Lisa.png" alt="">
+<p>Lisa Marie Simpson (born May 9)[9] is the elder daughter and middle child of the Simpson family and one of the two tritagonists (along with Marge,) of The Simpsons series.</p>
+<ul> <li>“If anyone wants me, I'll be in my room.”
+    ―Lisa's "catchphrase"[src]</li>
+    <li>“Quit it, Bart!”
+    ―Lisa's catchphrase</li>
+    <li>“BAAAAART!!”
+    ―Lisa’s catchphrase</li>
+</ul><script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host +
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body></html>
